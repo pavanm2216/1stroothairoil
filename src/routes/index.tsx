@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { ShoppingBag, UserRound } from "lucide-react";
+import { Mail, MapPin, Phone, ShoppingBag, UserRound } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CinematicFilm } from "@/components/CinematicFilm";
 import { useCart } from "@/context/CartContext";
@@ -203,6 +203,22 @@ function Index() {
           <span className="font-serif text-base normal-case tracking-wide text-foreground">
             1st ROOT
           </span>
+          <div className="flex flex-col items-center gap-2 normal-case tracking-normal md:flex-row md:gap-6">
+            <a href="tel:+919177865129" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Phone className="h-3 w-3" />+91 91778 65129
+            </a>
+            <a href="mailto:info@1strootcosmetics.com" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Mail className="h-3 w-3" />info@1strootcosmetics.com
+            </a>
+            <a
+              href="https://maps.google.com/?q=4th+floor+Ramalayam+Rd,+Kondapur,+Hyderabad,+Telangana+500084"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 hover:text-primary transition-colors text-center md:text-left"
+            >
+              <MapPin className="h-3 w-3 shrink-0" />4th Floor, Ramalayam Rd, Kondapur, HITEC City, Hyderabad 500084
+            </a>
+          </div>
           <span>© {new Date().getFullYear()} 1st ROOT · Vedam of Hair</span>
         </footer>
       </section>
