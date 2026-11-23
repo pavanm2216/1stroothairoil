@@ -10,6 +10,14 @@ lerna-debug.log*
 node_modules
 .kilo/
 dist
+dist-upload.zip
+dist.zip
+"dist (2).zip"
+"dist (3).zip"
+"dist (4).zip"
+"dist (5).zip"
+*.zip
+.output
 dist-ssr
 .output
 .vinxi
